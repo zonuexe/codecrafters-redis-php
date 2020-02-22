@@ -4,10 +4,8 @@
 # unless you really need them.
 debug: false
 
-
-# Use this to change the Python version used to run your code
+# Use this to change the PHP version used to run your code
 # on Codecrafters.
 #
 # Available versions: php-7.4
 language_pack: php-7.4
-
