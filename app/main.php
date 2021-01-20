@@ -1,10 +1,9 @@
 <?php
 error_reporting(E_ALL);
 
-echo "Implement your program here!";
+echo "Your code goes here";
 
-/* Comment out the code below to pass the first stage */
-
+// Uncomment this to pass the first stage
 // $sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 // socket_set_option($sock, SOL_SOCKET, SO_REUSEPORT, 1);
 // socket_bind($sock, "localhost", 6379);
