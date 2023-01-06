@@ -9,6 +9,12 @@ $sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 socket_set_option($sock, SOL_SOCKET, SO_REUSEPORT, 1);
 socket_bind($sock, "localhost", 6379);
 socket_listen($sock, 5);
-socket_accept($sock); // Wait for first client
+$client = socket_accept($sock); // Wait for first client
 
+// while (!in_array($line = socket_read($client, 1024), ['', false], true)) {
+//     var_dump($line);
+// }
+socket_write($client, "+PONG\r\n");
+
+socket_close($client);
 socket_close($sock);
